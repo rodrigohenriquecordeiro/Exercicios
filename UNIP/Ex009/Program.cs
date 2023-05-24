@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex009
 {
@@ -27,7 +23,7 @@ namespace Ex009
 
         private static string CalculaIdadeEmDias(DateTime nascimento)
         {
-            return DateTime.Now.Subtract(nascimento).TotalDays.ToString("F1");
+            return DateTime.Now.Subtract(nascimento).TotalDays.ToString("F0");
         }
     }
 }
