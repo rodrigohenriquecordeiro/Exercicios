@@ -16,17 +16,19 @@ namespace Ex036
             try
             {
                 int numero = 0;
-                const int limite = 10;
                 List<int> lstNumeros = new List<int>();
 
-                Console.Write("Digite um número: ");
-
-                while (!int.TryParse(Console.ReadLine(), out numero))
+                for (int i = 1; i <= 10; i++)
                 {
+                    Console.Write($"Digite o {i}º número: ");
+                    while (!NumeroRecebidoValido(out numero))
+                    {
+                        Console.WriteLine($"\n***Opção inválida, tente novamente***");
+                        Console.Write($"\nDigite o {i}º número: ");
+                    }
                     lstNumeros.Add(numero);
-                    Console.Write("Digite um número: ");
                 }
-                lstNumeros.Add(numero);
+
                 Console.WriteLine(GeraResultado(lstNumeros)); 
                 Console.ReadLine();
             }
@@ -36,11 +38,17 @@ namespace Ex036
             }
         }
 
+        private static bool NumeroRecebidoValido(out int numero)
+        {
+            return int.TryParse(Console.ReadLine(), out numero);
+        }
+
         private static string GeraResultado(List<int> lstNumeros)
         {
-            return $"\nMaior: {lstNumeros.Max()}." +
-                $"\nMenor: {lstNumeros.Min()}." +
-                $"\nMédia: {lstNumeros.Sum()}.";
+            return $"\nMaior: \t{lstNumeros.Max()}" +
+                $"\nMenor: \t{lstNumeros.Min()}" +
+                $"\nSoma: \t{lstNumeros.Sum()}" +
+                $"\nMédia: \t{lstNumeros.Sum() / lstNumeros.Count:F0}";
         }
     }
 }
