@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Ex064
 {
@@ -19,6 +20,7 @@ namespace Ex064
             try
             {
                 int[] vetor = null;
+                int escolha = 0;
 
                 while (true)
                 {
@@ -31,8 +33,7 @@ namespace Ex064
                         "\n6 - Exibir a quantidade de números ímpares existem nas posições pares do vetor" +
                         "\n7 - Sair" +
                         "\nDigite sua escolha: ");
-
-                    int escolha = 0;
+                    
                     while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > 7)
                     {
                         Console.WriteLine("\nOpção inválida!");
@@ -40,23 +41,26 @@ namespace Ex064
                     }
 
                     if (escolha == 1)
-                    {
-                        CarregarVetor(vetor);
-                    }
-
-                    
+                        vetor = CarregarVetor();
 
                     if (escolha == 2)
                         ListarVetor(vetor);
 
-                    //1 => CarregarVetor(),
-                    //2 => ListarVetor(),
-                    //3 => Par(),
-                    //4 => Impar(),
-                    //5 => QuantidadeImpares(),
-                    //6 => QuantidadePares(),    
-                }
+                    if (escolha == 3)
+                        Par(vetor);
 
+                    if (escolha == 4)
+                        Impar(vetor);
+
+                    if (escolha == 5)
+                        QuantidadePar(vetor);
+
+                    if (escolha == 6)
+                        QuantidadeImpar(vetor);
+
+                    if (escolha == 7)
+                        break;
+                }
 
                 Console.WriteLine("Fim");
                 Console.ReadLine();
@@ -65,29 +69,74 @@ namespace Ex064
             {
                 throw new Exception(e.Message);
             }                    
+        }
 
-            static int[] CarregarVetor(int[] vetor)
+        private static void QuantidadeImpar(int[] vetor)
+        {
+            int quantidadeImpar = 0;
+            Console.WriteLine("Quantidade de números ímpares existem nas posições pares do vetor");
+            for (int i = 0; i < vetor.Length;)
             {
-                Console.Write("Qual o tamanho do vetor? ");
-                int tamanho = int.Parse(Console.ReadLine());
-                vetor = new int[tamanho];
+                if (vetor[i] % 2 != 0)
+                    quantidadeImpar++;
+                i += 2;
+            }
+            Console.WriteLine($"Resultado: {quantidadeImpar}");
+        }
 
-                for (int i = 0; i < tamanho; i++)
-                {
-                    Console.Write($"{i + 1}º número: ");
-                    vetor[i] = int.Parse(Console.ReadLine());
-                }
+        private static void QuantidadePar(int[] vetor)
+        {
+            int quantidadePar = 0;
+            Console.WriteLine("Quantidade de números pares existem nas posições ímpares do vetor");
+            for (int i = 0; i < vetor.Length;)
+            {
+                if (vetor[i] % 2 == 0)
+                    quantidadePar++;
+                i += 2;
+            }
+            Console.WriteLine($"Resultado: {quantidadePar}");
+        }
 
-                return vetor;
+        private static void Impar(int[] vetor)
+        {
+            Console.WriteLine("Números ímpares");
+            foreach (var numero in vetor.ToList().Where(x => x % 2 != 0))
+            {
+                Console.WriteLine(numero);
+            }
+        }
+
+        private static void Par(int[] vetor)
+        {
+            Console.WriteLine("Números pares");
+            foreach (var numero in vetor.ToList().Where(x => x % 2 == 0))
+            {
+                Console.WriteLine(numero);
+            }
+        }
+
+        private static void ListarVetor(int[] vetor)
+        {
+            foreach (var numero in vetor)
+            {
+                Console.WriteLine(numero);
+            }
+        }
+
+        private static int[] CarregarVetor()
+        {
+            int[] vetor;
+            Console.Write("\nQual o tamanho do vetor? ");
+            int tamanho = int.Parse(Console.ReadLine());
+            vetor = new int[tamanho];
+
+            for (int i = 0; i < tamanho; i++)
+            {
+                Console.Write($"{i}º número: ");
+                vetor[i] = int.Parse(Console.ReadLine());
             }
 
-            static void ListarVetor(int[] vetor)
-            {
-                foreach (var numero in vetor)
-                {
-                    Console.WriteLine(numero);
-                }
-            }
+            return vetor;
         }
     }
 }
