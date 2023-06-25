@@ -1,4 +1,4 @@
-# Exercicios
+# Exercícios
 Lista de Exercícios de C# da UNIP.
 
 Foram executados todos os 64 exercícios desta lista para o Console. Eles abordaram os tópicos:
