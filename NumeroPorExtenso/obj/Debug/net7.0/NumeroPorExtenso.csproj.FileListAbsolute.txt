@@ -1,0 +1,14 @@
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.exe
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.deps.json
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.runtimeconfig.json
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.dll
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.pdb
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.AssemblyInfoInputs.cache
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.AssemblyInfo.cs
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.csproj.CoreCompileInputs.cache
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.dll
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\refint\NumeroPorExtenso.dll
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.pdb
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.genruntimeconfig.cache
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\ref\NumeroPorExtenso.dll
