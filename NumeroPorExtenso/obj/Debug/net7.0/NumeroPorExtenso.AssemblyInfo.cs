@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NumeroPorExtenso")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aabd7be42d15fa7a64f1fd03abbc855dd1b7a6b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("NumeroPorExtenso")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NumeroPorExtenso")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

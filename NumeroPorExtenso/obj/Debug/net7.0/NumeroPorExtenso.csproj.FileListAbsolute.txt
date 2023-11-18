@@ -12,3 +12,4 @@ C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\refint\
 C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.pdb
 C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.genruntimeconfig.cache
 C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\ref\NumeroPorExtenso.dll
+C:\Projetos\Back-End\CSharp\Exercicios\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.sourcelink.json
