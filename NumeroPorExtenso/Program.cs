@@ -169,7 +169,7 @@
         {
             100 => "Cem",
             101 => "Cento",
-            200 => "Dezentos",
+            200 => "Duzentos",
             300 => "Trezentos",
             400 => "Quatrocentos",
             500 => "Quinhentos",
